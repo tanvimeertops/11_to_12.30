@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "functionwithparameterandwithoutreturntype": "c",
+        "functionwithoutparameterandwithreturntype": "c",
+        "functionwithparameterandwithreturntype": "c"
+    }
+}

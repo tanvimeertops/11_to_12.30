@@ -1,0 +1,13 @@
+//4. function with parameter and with return type.
+#include<stdio.h>
+int sum(int a,int b);
+void main(){
+    int num1,num2;
+    printf("Enter num1 and num2:");
+    scanf("%d %d",&num1,&num2);
+printf("sum:%d",sum(num1,num2));//call by value/pass by value
+
+}
+int sum(int a,int b){
+    return(a+b);
+}

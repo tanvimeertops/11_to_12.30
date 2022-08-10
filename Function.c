@@ -10,7 +10,7 @@ characteristics
 1. every func should have a return type.
 2. it should always return a value as per 
 the return type
-types of functions
+properties of functions
 1. function without parameter and without return type.
 2. function with parameter and without return type.
 3. function without parameter and with return type.
@@ -19,6 +19,7 @@ stages of function
 1. declaration eg: void sum();
 2. defination eg: void sum(){}
 3. call eg: sum();
+void is a datatype which itself returns nothing.
 */
 //1. function without parameter and without return type.
 #include<stdio.h>
