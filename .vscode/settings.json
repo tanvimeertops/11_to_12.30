@@ -2,6 +2,7 @@
     "files.associations": {
         "functionwithparameterandwithoutreturntype": "c",
         "functionwithoutparameterandwithreturntype": "c",
-        "functionwithparameterandwithreturntype": "c"
+        "functionwithparameterandwithreturntype": "c",
+        "stdio.h": "c"
     }
 }
