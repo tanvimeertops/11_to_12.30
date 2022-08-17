@@ -7,6 +7,8 @@ Array is collection of data of same type
 
 Structure is a user defined data type which groups the 
 different type of data into similar type 
+*it stores data into different memory location
+
 
 //structure with array
 */
@@ -26,12 +28,13 @@ void main(){
     {
         printf("\nEnter name:");
         scanf("%s", &s[i].name);
-        printf("\nEnter roll no:");
-        scanf("%d", &s[i].roll_no);
-        printf("\nEnter semester:");
-        scanf("%d", &s[i].sem);
-        printf("\nEnter branch:");
-        scanf("%s", &s[i].branch);
+        printf("%d",&s[i].name);
+        // printf("\nEnter roll no:");
+        // scanf("%d", &s[i].roll_no);
+        // printf("\nEnter semester:");
+        // scanf("%d", &s[i].sem);
+        // printf("\nEnter branch:");
+        // scanf("%s", &s[i].branch);
     }
 
 // printf("\nEnter roll no:");
