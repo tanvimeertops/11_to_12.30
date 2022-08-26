@@ -3,6 +3,8 @@
         "functionwithparameterandwithoutreturntype": "c",
         "functionwithoutparameterandwithreturntype": "c",
         "functionwithparameterandwithreturntype": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "iostream": "cpp",
+        "ostream": "cpp"
     }
 }

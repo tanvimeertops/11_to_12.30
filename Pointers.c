@@ -6,11 +6,12 @@ void stringrev(char *ptr)
 {
 
    if(*ptr){
-    //ptr++; 
+   
    stringrev(ptr+1) ;
     printf("\n%c",*ptr);
-    //printf("%p",ptr);
+    printf("%p",ptr);
    } 
+   
 }
 
 void main(){
