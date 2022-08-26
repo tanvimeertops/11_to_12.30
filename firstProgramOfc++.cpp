@@ -22,6 +22,9 @@ Access specifier: it gives visibility and accessibility
 difference between oop and pop
 pop run from top to bottom              oop runs from bottom to top
 it works functions                        it works with object
+
+
+
 */
 #include<iostream>
 using namespace std;
@@ -38,6 +41,7 @@ cout<<"enter A:";
 }
 };
 class Calc{
+
 int a,b;
 public:
 void sub(int x,int y){
