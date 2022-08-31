@@ -14,6 +14,7 @@
 Destructor destruct the object.
 c++ we have to destruct a object manually
 object will stored in stack memory.
+
 */
 /*volume of box:(lxbxh) */
 #include<iostream>
@@ -26,6 +27,7 @@ private:
 public:
     ConstructorOverloading();
     ConstructorOverloading(int length,int breadth,int height);
+    ConstructorOverloading(ConstructorOverloading &cc);
     ~ConstructorOverloading();
     void volume();
 };
@@ -43,6 +45,14 @@ ConstructorOverloading::ConstructorOverloading(int length,int breadth,int height
     b=breadth;
     h=height;
 }
+
+ConstructorOverloading::ConstructorOverloading(ConstructorOverloading &cc){
+    cout<<"inside copy constructor"<<endl;
+    l=cc.l;
+    b=cc.b;
+    h=cc.h;
+   
+}
 void ConstructorOverloading::volume(){
 vol=l*b*h;
 cout<<"volume of box:"<<vol<<endl;
@@ -57,5 +67,7 @@ ConstructorOverloading dc;
 dc.volume();//6
 ConstructorOverloading pc(4,5,6);
 pc.volume();//120
+ConstructorOverloading cc(dc); //cc(dc)
+cc.volume();
 
 }
