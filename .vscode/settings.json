@@ -5,6 +5,7 @@
         "functionwithparameterandwithreturntype": "c",
         "stdio.h": "c",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "random": "cpp"
     }
 }
