@@ -4,12 +4,12 @@ using namespace std;
 class Marks{
     public:
     int n;
-    int marks[5];
+    
 void getStudents(){
 cout<<"enter no of students:";
 cin>>n;
 }
-
+int marks[5];
 int roll_no;
 string name;
 
