@@ -15,6 +15,8 @@ Destructor destruct the object.
 c++ we have to destruct a object manually
 object will stored in stack memory.
 
+
+-->copy constructor cannot be overloaded.
 */
 /*volume of box:(lxbxh) */
 #include<iostream>
@@ -67,7 +69,7 @@ ConstructorOverloading dc;
 dc.volume();//6
 ConstructorOverloading pc(4,5,6);
 pc.volume();//120
-ConstructorOverloading cc(dc); //cc(dc)
+ConstructorOverloading cc(dc); //cc(dc) 
 cc.volume();
 
 }
