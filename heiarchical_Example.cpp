@@ -30,6 +30,7 @@ class Marks{
 
     void genMarks(int no){
         n=no;
+        delete[]mark;
         mark=new int[n];
         for (int i = 0; i < n; i++)
         {
@@ -60,7 +61,12 @@ int main(){
     int num;
     cout<<"enter the number of student:";
     cin>>num;
-    
+    //int a[3];
+    //stack
+    //sma
+    //dma
+    //run time
+    //heap
     Physics *p=new Physics[num];//array of object
     Chemistry *c=new Chemistry[num];
     Mathematics *m=new Mathematics[num];

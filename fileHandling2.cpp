@@ -15,18 +15,18 @@ step 5 close.
 using namespace std;
 int main(){
 string write_data;
-cout<<"enter the data to write into file:";
-//read from  console
-getline(cin,write_data);
-//cout<<endl<<write_data;
+// cout<<"enter the data to write into file:";
+// //read from  console
+// getline(cin,write_data);
+// //cout<<endl<<write_data;
 
 cout<<"write data into file"<<endl;
 
 ofstream myfile;
 //open and create the text file
-myfile.open("abhishek.txt");
+myfile.open("abhishek.txt",ios::app);//to append in file
 //write the data into file 
-myfile<<write_data;
+myfile<<"\nthis for test\n this is abhishek\ntessting the file";
 cout<<"data written successfully"<<endl;
 myfile.close();
 
@@ -35,11 +35,13 @@ string data1;
 //object of read data
 ifstream read_data;
 //open the file from which you wannna read data.
-read_data.open("nirmal.txt");
-//read data
-getline(read_data,data1);
+
+read_data.open("abhishek.txt");
+//read multiple line
+while(getline(read_data,data1)){
 //to print in console
-cout<<"your data:"<<endl<<data1;
+cout<<""<<endl<<data1;
+}
 cout<<endl<<"data read successful"<<endl;
 read_data.close();
 
